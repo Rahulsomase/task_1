@@ -257,3 +257,89 @@ return(
 }
 
 export default Chart;
+
+// ==========================================================================================
+
+
+
+// import React from 'react';
+// import { Bar } from 'react-chartjs-2';
+// import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
+
+
+// // Register Chart.js components
+// ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
+
+// function Chart() {
+//   // Generate random data for each chart
+//   const generateRandomData = () => Array.from({ length: 5 }, () => Math.floor(Math.random() * 100));
+
+//   // Data and options for the first chart
+//   const chart1Data = {
+//     labels: ['A', 'B', 'C', 'D', 'E'],
+//     datasets: [
+//       {
+//         label: 'Chart 1 Dataset',
+//         data: generateRandomData(),
+//         backgroundColor: 'rgba(255, 99, 132, 0.6)',
+//         borderColor: 'rgba(255, 99, 132, 1)',
+//         borderWidth: 1,
+//       },
+//     ],
+//   };
+
+//   // Data and options for the second chart
+//   const chart2Data = {
+//     labels: ['X', 'Y', 'Z', 'W', 'V'],
+//     datasets: [
+//       {
+//         label: 'Chart 2 Dataset',
+//         data: generateRandomData(),
+//         backgroundColor: 'rgba(54, 162, 235, 0.6)',
+//         borderColor: 'rgba(54, 162, 235, 1)',
+//         borderWidth: 1,
+//       },
+//     ],
+//   };
+
+//   // Data and options for the third chart
+//   const chart3Data = {
+//     labels: ['P', 'Q', 'R', 'S', 'T'],
+//     datasets: [
+//       {
+//         label: 'Chart 3 Dataset',
+//         data: generateRandomData(),
+//         backgroundColor: 'rgba(75, 192, 192, 0.6)',
+//         borderColor: 'rgba(75, 192, 192, 1)',
+//         borderWidth: 1,
+//       },
+//     ],
+//   };
+
+//   // Common options for all charts
+//   const options = {
+//     responsive: true,
+//     plugins: {
+//       legend: {
+//         position: 'top',
+//       },
+//     },
+//   };
+
+//   return (
+//     <div className="charts-container">
+//       <h2>Multiple Bar Charts</h2>
+//       <div className="chart">
+//         <Bar data={chart1Data} options={options} />
+//       </div>
+//       <div className="chart">
+//         <Bar data={chart2Data} options={options} />
+//       </div>
+//       <div className="chart">
+//         <Bar data={chart3Data} options={options} />
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Chart;

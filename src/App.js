@@ -1,8 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import Chart from './Components/Chart';
-import Table from './Table';
-import Info from './Components/Data';
+import Table from './Components/Table';
 import Barchart from './Components/Barchart';
 
 function App() {

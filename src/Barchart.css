@@ -1,4 +1,4 @@
-.dashboard-container {
+/* .dashboard-container {
     padding: 20px;
     background: #f8f9fc;
     min-height: 100vh;
@@ -23,4 +23,32 @@
     text-align: center;
     color: #4e73df;
     margin-bottom: 15px;
-}
+} */
+
+
+
+/*  */
+
+
+/* Charts.css */
+.charts-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .chart {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    margin-bottom: 30px;
+    color: #333;
+  }
+  

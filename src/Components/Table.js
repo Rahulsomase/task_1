@@ -1,7 +1,7 @@
 
 import React from "react";
-import Footer from "./Components/Footer";
-import Header from "./Components/Header";
+import Footer from "./Footer";
+import Header from "./Header";
 
 const Table = () => {
     return (
