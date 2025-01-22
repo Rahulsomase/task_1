@@ -104,7 +104,7 @@ function Charts() {
 
   // Data and options for the first chart
   const chart1Data = {
-    labels: ['A', 'B', 'C', 'D', 'E'],
+    labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
     datasets: [
       {
         label: 'Chart 1 Dataset',
@@ -118,7 +118,7 @@ function Charts() {
 
   // Data and options for the second chart
   const chart2Data = {
-    labels: ['X', 'Y', 'Z', 'W', 'V'],
+    labels: ['Cliet X', 'client Y', ' client Z', 'client W', 'client V'],
     datasets: [
       {
         label: 'Chart 2 Dataset',
@@ -132,7 +132,7 @@ function Charts() {
 
   // Data and options for the third chart
   const chart3Data = {
-    labels: ['P', 'Q', 'R', 'S', 'T'],
+    labels: ['Rev 2021', 'Rev 2022', 'Rev 2023', 'Rev 2024', 'Rev 2025'],
     datasets: [
       {
         label: 'Chart 3 Dataset',
@@ -158,31 +158,33 @@ function Charts() {
   
    
     <div className="charts-container">
+      <div>
         <body className="sb-nav-fixed">
-         <nav className="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-               <div>
-                  <Header/>
-               </div>
-         </nav>
-      <h2>Multiple Bar Charts</h2>
-      <div className="chart">
-        <Bar data={chart1Data} options={options} />
+          <nav className="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <div>
+              <Header/>
+            </div>
+          </nav>
+          <h2>Multiple Bar Charts</h2>
+          <div className="chart">
+            <Bar data={chart1Data} options={options} />
+            <h3 style={{ textAlign: 'center' }}>Employee data</h3>
+          </div>
+          <div className="chart">
+            <Bar data={chart2Data} options={options} />
+            <h3 style={{ textAlign: 'center' }}>Client data</h3>
+          </div>
+          <div className="chart">
+            <Bar data={chart3Data} options={options} />
+            <h3 style={{ textAlign: 'center' }}>Revenue data</h3>   
+          </div>
+          <footer className="py-4 bg-light mt-auto">
+            <div className="container-fluid px-4">
+              <Footer/>
+            </div>
+          </footer>
+        </body>
       </div>
-      <div className="chart">
-        <Bar data={chart2Data} options={options} />
-      </div>
-      <div className="chart">
-        <Bar data={chart3Data} options={options} />
-
-        
-      </div>
-
-      <footer className="py-4 bg-light mt-auto">
-                        <div className="container-fluid px-4">
-                            <Footer/>
-                        </div>
-                    </footer>
-            </body>
     </div>
 
     
