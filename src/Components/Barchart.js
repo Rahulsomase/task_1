@@ -97,11 +97,7 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
 function Charts() {
 
-    <nav className="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-    <div>
-        <Header/>
-    </div>
-</nav>
+   
 
   // Generate random data for each chart
   const generateRandomData = () => Array.from({ length: 5 }, () => Math.floor(Math.random() * 100));
@@ -159,7 +155,15 @@ function Charts() {
   };
 
   return (
+  
+   
     <div className="charts-container">
+        <body className="sb-nav-fixed">
+         <nav className="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+               <div>
+                  <Header/>
+               </div>
+         </nav>
       <h2>Multiple Bar Charts</h2>
       <div className="chart">
         <Bar data={chart1Data} options={options} />
@@ -178,6 +182,7 @@ function Charts() {
                             <Footer/>
                         </div>
                     </footer>
+            </body>
     </div>
 
     
